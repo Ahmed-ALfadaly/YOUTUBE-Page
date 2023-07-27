@@ -1,0 +1,176 @@
+@font-face{
+    font-family: "cairoFont";
+    src: url(../fonts/Cairo-Regular.ttf);
+}
+body{
+    background-color: #fafafa;
+    font-family:"cairoFont";
+}
+a{
+    color: #000;
+    text-decoration: none !important;
+}
+button{
+    background-color:transparent !important;
+   color: #bf40bf !important;
+   border-color: #bf40bf !important;
+
+}
+button:hover{
+    color: #fff !important;
+    background-color: #bf40bf !important;
+   }
+#top-menu .bg-light{
+    background-color: #fff !important;
+}
+#top-menu .video-icon{
+    background-color: #bf40bf;
+    color: #fff;
+    border-radius: 16%;
+}
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .active>.nav-link
+{
+    background-color: #bf40bf;
+    color: #fff;
+}
+.navbar .login{
+    color: #bf40bf;
+}
+.modal .modal-header .close:hover{
+    background-color: transparent !important;
+    color: #bf40bf !important;
+}
+input.form-control:focus,
+button:focus{
+    box-shadow: none !important;
+}
+.card .card-icons{
+    position: relative;
+
+}
+time{
+    position: absolute;
+    bottom: 10px;
+    left: 7px;
+    color: #fff;
+    background-color: black;
+    padding: 0px 3px;
+}
+.container-fluid .fa-bars{
+    cursor: pointer;
+}
+.card .fa-play{
+    position: absolute;
+    top: 43%;
+    right: 42%;
+    color: #2c3131c7;
+    display: none;
+}
+.card .card-title{
+    height: 75px;
+}
+.card:hover .fa-play{
+    display: inline;
+}
+.card:hover{
+    transform: translateY(-1em);
+}
+.card{
+    transition: transform 1s;
+}
+#top-menu .fa-bars{
+    cursor: pointer;
+}
+.sidebar{
+    position: fixed;
+    z-index: 4;
+    right: -17rem;
+    transition: all .8s ease-in-out;
+    height: 100%;
+    background-color: #fff;
+    overflow: hidden;
+    padding-bottom: 60px;
+}
+.sidebar:hover{
+    overflow-y: scroll;
+}
+.sidebar .purple{
+    color: #bf40bf;
+}
+.sidebar .list-group-item:hover{
+    color: #fff;
+    background-color: #bf40bf;
+}
+.sidebar .list-group-item:hover .purple{
+    color: #fff;
+}
+.sidebar .list-group-item{
+    width: 17rem;
+}
+#wrap.toggled.sidbar{
+    right: 0rem;
+}
+.sidebar::-webkit-scrollbar{
+    background-color: rgb(230, 230, 230);
+    width: 8px;
+}
+.sidebar::-webkit-scrollbar-thumb{
+    background-color: rgb(179, 179, 179);
+    width: 8px;
+}
+.layer{
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 3;
+    display: none;
+}
+.navbar .search-icon{
+    color: #c7177d;
+    cursor: pointer;
+    padding: 15px 10px;
+    position: absolute;
+    top: 15px;
+    left: 132px;
+    display: none;
+}
+.navbar .search-icon:hover{
+    color: #fff;
+    background-color: blue;
+}
+.search-input{
+    position: fixed;
+    top: 72px;
+    border: none;
+    padding: 6px 23px;
+    height: 65px;
+    background-color: #3f3b3b3f;
+   display: none;
+    z-index: 1;
+    width: 100%;
+}
+.search-input :focus{
+    background-color: #fafafa;
+}
+.container-fluid{
+    padding: 0px;
+    overflow: hidden;
+}
+@media(max-width:1047px) /*تكتب دائما" في نهايه الملف*/{
+    /* لاخفاء زر البحث او حقل البحث في القائمه العلويه*/
+    .navbar .collapse .form-inline{
+    display: none;
+}
+.navbar .search-icon{
+    /*لاظهار ايقونه البحث*/
+    display: inline;
+}
+}
+@media(min-width:1047px) {
+    .search-input {
+        display: none !important; 
+    }
+}
